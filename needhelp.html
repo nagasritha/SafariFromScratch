@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bhargavi code-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--swiper carousal-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--end-->
+    <link rel="stylesheet" href="needhelp.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="blog.css"/>
+    <link rel="stylesheet" href="bookyourAccomadation.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a2ddb56b63.js" crossorigin="anonymous"></script>        
+    <script src="faq.js"></script>
+</head>
+<body>
+    <!--bhargavi code-->
+    <div>  
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent">
+        <div class="container-fluid ms-3 me-3">
+          <a class="navbar-brand" href="#">Exam Safari</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto me-3">
+              <h6 class="d-lg-none">Menu</h6>
+              <li class="nav-item active d-none d-lg-inline">
+                <button
+                  class="bg-transparent modal-button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#downloadModal"
+                >
+                  <a class="nav-link active d-flex" aria-current="page" href="#">
+                    <div>
+                      <i
+                        class="fa fa-solid fa-mobile-button nav-item-icon pe-1"
+                      ></i>
+                    </div>
+                    Download App
+                  </a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown dropdown-btn d-none d-lg-inline">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-headset"></i>
+                    Support
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end dropdown-list"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <p class="dropdown-title">Support Now</p>
+                    <li class="dropdown-list-item support-dropdown-list-item">
+                      <div>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <p>Quick Chat</p>
+                      </div>
+                      <div
+                        class="btn btn-success support-dropdown-list-item-online"
+                      >
+                        Online
+                      </div>
+                    </li>
+                    <li class="dropdown-list-item">
+                      <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+                      <p>Whatsapp</p>
+                    </li>
+                    <li class="dropdown-list-item">
+                      <i
+                        class="fa-brands fa-facebook-messenger facebook-icon"
+                      ></i>
+                      <p>Facebook Messenger</p>
+                    </li>
+                    <li class="dropdown-list-item">
+                      <i class="fa-solid fa-phone call-icon"></i>
+                      <p>+91 9513884849</p>
+                    </li>
+                    <li class="dropdown-list-item">
+                      <i class="fa-regular fa-envelope support-icon"></i>
+                      <p>contact@examsafari.com</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+  
+              <li class="nav-item d-none d-lg-inline">
+                <a class="nav-link" href="#">
+                  <div class="d-none d-lg-inline">
+                    <i class="fa-solid fa-blog"></i>
+                  </div>
+                  Blogs
+                </a>
+              </li>
+  
+              <li class="nav-item d-none d-lg-inline">
+                <a class="nav-link" href="#">
+                  <button
+                    type="button "
+                    class="bg-transparent modal-button login-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginOrSignupModel"
+                  >
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>Login
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item d-none d-lg-inline">
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle dropdown-btn profile-btn"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="profile-icon-btn">
+                      <i class="fa-solid fa-user profile-icon"></i>
+                    </div>
+                    <i class="fa-solid fa-bars profile-bar-icon"></i>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end dropdown-list"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <p class="dropdown-title">Login to continue</p>
+                    <li class="dropdown-list-item">
+                      <i class="fa-regular fa-user"></i>
+                      <p>My Profile</p>
+                    </li>
+                    <li class="dropdown-list-item">
+                      <i class="fa-solid fa-bookmark"></i>
+                      <p>Bookings</p>
+                    </li>
+                    <li class="dropdown-list-item">
+                      <i class="fa-regular fa-handshake"></i>
+                      <p>Partner With Us</p>
+                    </li>
+                    <li class="dropdown-list-item">
+                      <i class="fa-solid fa-list-check"></i>
+                      <p>List With Us</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <hr class="d-lg-none" />
+              <li class="nav-item nav-item-small d-lg-none">
+                <i class="fa-solid fa-headset"></i>
+                <span>Support</span>
+              </li>
+              <li class="nav-item nav-item-small d-lg-none">
+                <i class="fa-solid fa-blog"></i>
+                <span>Blogs</span>
+              </li>
+              <hr class="d-lg-none" />
+              <li class="nav-item nav-item-small-login-head d-lg-none">
+                Login to continue
+              </li>
+              <li class="nav-item nav-item-small d-lg-none">
+                <i class="fa-regular fa-user"></i>
+                <span>My Profile</span>
+              </li>
+              <li class="nav-item nav-item-small d-lg-none">
+                <i class="fa-solid fa-bookmark"></i>
+                <span>Bookings</span>
+              </li>
+              <hr class="d-lg-none" />
+              <li class="nav-item nav-item-small d-lg-none">
+                <i class="fa-regular fa-handshake"></i>
+                <span>Partner With Us</span>
+              </li>
+              <li class="nav-item nav-item-small d-lg-none">
+                <i class="fa-solid fa-list-check"></i>
+                <span>List With Us</span>
+              </li>
+              <hr class="d-lg-none" />
+              <li class="nav-item nav-item-small d-lg-none">
+                <button
+                  type="button "
+                  class="bg-transparent modal-button login-sm-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginOrSignupModel"
+                >
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  <span>Login</span>
+                </button>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+      <!---download modal-->
+      <div class="modal" tabindex="-1" id="downloadModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="download-modal-head">
+                <h1 class="modal-title">Start your journey from here!</h1>
+                <p>More than 1.25 million beds available in 600 cities</p>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex">
+                <img
+                  class="download-modal-qr-image"
+                  src="https://res.cloudinary.com/dbx3fibxf/image/upload/v1711881988/Qr-code_tejgvo.png"
+                  alt="Qr code"
+                />
+                <ul class="download-modal-list">
+                  <li>
+                    <i class="fa-regular fa-circle-check modal-icon"></i>
+                    <p>100% <span>Verified Listings</span></p>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-calendar-check modal-icon"></i>
+                    <p>Quick and Easy <span>Booking</span></p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-tags modal-icon"></i>
+                    <p>Price Match <span>Guarantee</span></p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-handshake-angle modal-icon"></i>
+                    <p>24x7 <span>Personal Assistance</span></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div
+        class="modal fade"
+        id="loginOrSignupModel"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="login-modal-head">Log in or sign up</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+              <label class="email-label" for="email">Email Address</label>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                id="email"
+                class="input-email"
+              />
+              <button class="btn btn-success w-100">continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <section id="banner-section">
+        <div class="home-banner-bg-container">
+          <div class="banner-content-container">
+            <h2>Home away from home</h2>
+            <p>
+              Book student accommodations near top universities and cities across
+              the globe.
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-money-bill"></i>
+                <span>Affordable Price</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-house"></i>
+                <span>Good Facility</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-headset"></i>
+                <span>24*7 Assistance</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="help-section">
+        <div class="facilities-bg-container">
+          <div class="scroll-box-wrapper">
+            <nav class="scroll-box" overflowinf="none">
+              <div class="scroll-box-contents">
+                <div class="scroll-box-item">
+                  <div class="scroll-box-content">
+                    <i class="fa-solid fa-city"></i>
+                    <h6>4+ Cities</h6>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Consequuntur possimus voluptate excepturi! Veniam, officia
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-box-item">
+                  <div class="scroll-box-content">
+                    <i class="fa-solid fa-users"></i>
+                    <h6>3K+ Users</h6>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Harum laborum, consectetur inventore cumque eius quos ab,
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-box-item">
+                  <div class="scroll-box-content">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h6>250+ Parteners</h6>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Labore accusantium
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-box-item">
+                  <div class="scroll-box-content">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h6>50+ Exams</h6>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Labore accusantium
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section id="services-section">
+        <div class="services-container">
+          <h1>Services</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            architecto dolores provident assumenda! Assumenda, eveniet.
+          </p>
+          <div class="swiper card_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service-box">
+                  <h6>Accommodation Service</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptate repellendus reprehenderit natus itaque accusamus
+                    commodi!
+                  </p>
+                  <a href="#">View More</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-box">
+                  <h6>Travel Service</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptate repellendus reprehenderit natus itaque accusamus
+                    commodi!
+                  </p>
+                  <a href="#">View More</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-box">
+                  <h6>Accommodation + Travel Services</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptate repellendus reprehenderit natus itaque accusamus
+                    commodi!
+                  </p>
+                  <a href="#">View More</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section id="cities-section">
+        <div class="cities-bg-container">
+          <h1>Pupular Cities</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+            omnis!
+          </p>
+          <div class="cities-container">
+            <div class="city-container lucknow-city">
+              <button class="city-button">Lucknow</button>
+            </div>
+            <div class="city-container prayagraj-city">
+              <button class="city-button">Prayagraj</button>
+            </div>
+            <div class="city-container kanpur-city">
+              <button class="city-button">Kanpur</button>
+            </div>
+            <div class="city-container varanasi-city">
+              <button class="city-button">Varanasi</button>
+            </div>
+            <div class="city-container meerut-city">
+              <button class="city-button">Meerut</button>
+            </div>
+            <div class="city-container delhi-city">
+              <button class="city-button">Delhi</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="accomodation-section">
+        <div class="accommodation-bg-container">
+          <h1>Book you Perfect Accommodation</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
+            quia totam at veritatis nostrum voluptate.
+          </p>
+          <div class="scroll-box-wrapper">
+            <nav class="scroll-box" overflowinf="none">
+              <div class="scroll-box-contents">
+                <div class="scroll-box-item">
+                  <div class="scroll-box-content">
+                    <img
+                      src="https://prod-static-assets.amberstudent.com/images/fast-and-easy-bookings.svg"
+                    />
+                    <h6>Quick & easy bookings</h6>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Consequuntur possimus voluptate excepturi! Veniam, officia
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-box-item">
+                  <div class="scroll-box-content">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h6>Fooding Facility</h6>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Harum laborum, consectetur inventore cumque eius quos ab,
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-box-item">
+                  <div class="scroll-box-content">
+                    <img
+                      src="https://prod-static-assets.amberstudent.com/images/expert-assistance.svg"
+                    />
+                    <h6>Affordable Price</h6>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Labore accusantium
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-box-item">
+                  <div class="scroll-box-content">
+                    <img
+                      src="https://prod-static-assets.amberstudent.com/images/price-match-guarantee.svg"
+                    />
+                    <h6>100% Verified properties</h6>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Labore accusantium
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section></div>
+    <!--end-->
+   <div>
+    <!DOCTYPE Carousel blogs>
+    <div style="padding-left:55px;margin:10px 0px 10px 0px;">
+        <h3 class="carouselsection-headings"><b>Thousands of properties</b></h3>
+        <p class="carouselsection-para">Explore affluent and cozy student homes near renowned universities and bustling capitals</p>
+        <div class="blogsSlider" id="blogscontainer"></div>
+    </div>
+   <!DOCTYPE bookingAccomadation>
+   <div class="amber-pjgjzc">
+    <div class="undefined amber-oongyo">
+        <div class="amber-md7xwx">
+            <h2 class="amber-Text-root amber-Title-root amber-1ktbiq">Book your student accommodation in 3 easy steps</h2>
+            <div class="amber-Text-root amber-s72c7">Book places in major cities and universities across the globe</div>
+        </div>
+        <div class="amber-17tthb5">
+            <div class="HorizontalScroll_scroll-box-wrapper__UR6CN">
+                <nav id="scrollboxbooking" class="HorizontalScroll_scroll-box__miW_p" data-overflowing="right">
+                    <div id="scrollboxContentsbooking" class="HorizontalScroll_scroll-box-contents__cXJ1C HorizontalScroll_scroll-box-contents-no-transition__9qZ_H" role="list" style="padding-left: 20px; transform: none;">
+                        <div class="HorizontalScroll_scroll-box-item__3eLb1" role="listitem">
+                            <div class="amber-Group-root amber-199cgq1">
+                                <div class="amber-uc5hec"><div class="amber-1g7zb73">
+                                    <div class="amber-Text-root amber-hk5w16">1</div>
+                                </div>
+                                <img src="https://static-assets-amberstudent.imgix.net/images/bookings-steps-hd-1.svg" class="amber-1l6dvlo" alt="Discover and Finalise">
+                                <h3 class="amber-Text-root amber-Title-root amber-zn390">Discover and Finalise</h3>
+                                <div class="amber-Text-root amber-lwxgrw">Choose from a plethora of verified student home listings</div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right mr-3 ml-3" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="HorizontalScroll_scroll-box-item__3eLb1" role="listitem">
+                        <div class="amber-Group-root amber-199cgq1"><div class="amber-uc5hec">
+                            <div class="amber-1g7zb73"><div class="amber-Text-root amber-hk5w16">2</div>
+                        </div>
+                        <img src="https://static-assets-amberstudent.imgix.net/images/bookings-steps-hd-2.svg" class="amber-1l6dvlo" alt="Get your paperwork done">
+                        <h3 class="amber-Text-root amber-Title-root amber-zn390">Get your paperwork done</h3>
+                        <div class="amber-Text-root amber-lwxgrw">Paperwork’s on us, no need to fuss.</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right mr-3 ml-3" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="HorizontalScroll_scroll-box-item__3eLb1" role="listitem">
+                <div class="amber-Group-root amber-199cgq1"><div class="amber-uc5hec">
+                    <div class="amber-1g7zb73"><div class="amber-Text-root amber-hk5w16">3</div>
+                </div>
+                <img src="https://static-assets-amberstudent.imgix.net/images/bookings-steps-hd-3.svg" class="amber-1l6dvlo" alt="Accommodation Booked!">
+                <h3 class="amber-Text-root amber-Title-root amber-zn390">Accommodation Booked!</h3>
+                <div class="amber-Text-root amber-lwxgrw">Relax, pack your bags, and unravel a new life chapter!</div>
+            </div>
+        </div>
+    </div>
+</div>
+</nav>
+<button aria-label="left-advancer" id="leftAdvancerbooking" class="HorizontalScroll_scroll-box-advancer__kxGz0 HorizontalScroll_scroll-box-advancer_Left__NcNzY" type="button"><div class="HorizontalScroll_scroll-box-advancer-inner-container__9iFwZ"><svg class="HorizontalScroll_scroll-box-advancer_Icon__5nWXH" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M445.44 38.183L-2.53 512l447.97 473.817 85.857-81.173-409.6-433.23v81.172l409.6-433.23L445.44 38.18z"></path></svg></div></button><button aria-label="right-advancer" id="rightAdvancerbooking" class="HorizontalScroll_scroll-box-advancer__kxGz0 HorizontalScroll_scroll-box-advancer_Right__hIjHC" type="button"><div class="HorizontalScroll_scroll-box-advancer-inner-container__9iFwZ"><svg class="HorizontalScroll_scroll-box-advancer_Icon__5nWXH" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551 1024"><path d="M105.56 985.817L553.53 512 105.56 38.183l-85.857 81.173 409.6 433.23v-81.172l-409.6 433.23 85.856 81.174z"></path></svg></div></button></div></div></div>
+</div>
+   <!DOCTYPE FAQ>
+   <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 mt-3 mb-5">
+            <div class="partner-with parner-with-bg">
+                <div class="partner-with-card-bg">
+                    <h3>Partner with us</h3>
+                <p>At ExamSafari We Offer seamless Booking offers</p>
+                <button class="partner-with-button">Partner with us &gt;</button>
+                </div>
+            </div>
+           
+        </div>
+        <div class="col-12 col-md-6 mt-3 mb-5 ">
+            <div class="list-with-bg partner-with">
+                <div class="partner-with-card-bg">
+                    <h3>List with us</h3>
+                <p>List your property efficiently with ExamSafari</p>
+                <button class="partner-with-button">List with us &gt;</button>
+                </div>
+            </div>
+           
+        </div>
+        <div class="col-12">
+            <h2 class="text-center mb-5">Frequently asked Questions</h2>
+            <div class="faq-tabs">
+                <button id="service specifics" class="faq-tab">service specifics</button>
+                <button id="service specifics" class="faq-tab">Prerequisitess</button>
+                <button id="service specifics" class="faq-tab">Time & Mode of Delivery</button>
+                <button id="service specifics" class="faq-tab">Payment</button>
+            </div>
+            <hr/>
+            <div id="questions"></div>
+        </div>
+    </div>
+   </div>
+   <!DOCTYPE Need help section>
+   <div class="amber-pjgjzc"> 
+    <div class="undefined amber-oongyo">
+        <div class="amber-1fr50if mb-5">
+            <h3 class="amber-Text-root amber-Title-root amber-i7nrtr">Need Help? Connect with us!</h3>
+            <div class="amber-Text-root amber-1stt6a0">Feel free to contact us in case you have any queries.</div>
+        </div>
+        <div class="amber-itd7bk">
+            
+            <div class="amber-m0lhiq">
+                <div class="amber-17uqi5x">
+                    <a class="amber-Text-root amber-Anchor-root amber-lujx3w need-help-section-a" target="_blank">
+                        <div class="amber-1c8oizs">
+                            <button class="amber-UnstyledButton-root amber-ActionIcon-root amber-1jhuu7p" type="button" aria-labelledby="contact-card-label">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-chat-left-dots mt-3" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                    <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                                  </svg>
+                            </button>
+                            <div class="amber-Text-root amber-1ve3s7l" id="contact-card-label">Live Chat</div>
+                            <span class="amber-Text-root amber-e8xoak"><span class="amber-Text-root amber-4ao4r"></span> 2 Mins Reply</span>
+                        </div>
+                    </a>
+                    <a class="amber-Text-root amber-Anchor-root amber-lujx3w need-help-section-a" href="#" target="_blank">
+                        <div class="amber-1lancvl">
+                            <button class="amber-UnstyledButton-root amber-ActionIcon-root amber-1jhuu7p" type="button" aria-labelledby="contact-card-label">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#31C48D" class="mt-3 bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                                </svg>
+                            </button>
+                        <div class="amber-Text-root amber-1ve3s7l" id="contact-card-label">Chat on Whatsapp</div>
+                        <span class="amber-Text-root amber-15tlp4k"><span class="amber-Text-root amber-4ao4r"></span> 2 Mins Reply</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="amber-17uqi5x">
+                    <a class="amber-Text-root amber-Anchor-root amber-lujx3w need-help-section-a" href="#" target="_blank">
+                        <div class="amber-17inx1t">
+                            <button class="amber-UnstyledButton-root amber-ActionIcon-root amber-1jhuu7p" type="button" aria-labelledby="contact-card-label">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#f7a93b" class="mt-3 bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg>
+                            </button>
+                            <div class="amber-Text-root amber-1ve3s7l" id="contact-card-label">Email Us</div>
+                        </div>
+                    </a>
+                    <a class="amber-Text-root amber-Anchor-root amber-lujx3w need-help-section-a" href="#" target="_blank">
+                        <div class="amber-17inx1t">
+                            <button class="amber-UnstyledButton-root amber-ActionIcon-root amber-1jhuu7p" type="button" aria-labelledby="contact-card-label">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#3278fa" class="mt-3 bi bi-telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                  </svg>
+                            </button>
+                            <div class="amber-Text-root amber-1ve3s7l" id="contact-card-label">+91 9513884849</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!--footer-->
+   <div style="padding:0px 10px 0px 55px;margin:10px 0px 10px 0px;">
+    <div class="section12" style="gap:20px">
+        <div class="safari-width">
+            <h5><b>ExamSafari</b></h5>
+            <p style="color:#918d8d">Book your student accommodation near top universities across the globe</p>
+            <div class="p-3 rounded footer-sec1">
+            <div class="d-flex">
+                <img src="https://res.cloudinary.com/dkredoejm/image/upload/v1704809027/section2-img4_gvrr6b.png" class="ratings"/>
+                <h6 class="m-1" style="color:black; text-decoration:underline"><b>4.8 on Trustpilot</b></h6>
+                
+            </div> 
+            <p style="color:#918d8d">4.8 OUT OF 5 BASED ON 4000+ REVIEWS</p>
+           </div>
+        </div>
+        <ul class="section11-item d-flex flex-column">
+            <li>About</li>
+            <li>How it works</li>
+            <li>Refer a friend</li>
+            <li>Newsroom</li>
+            <li>list with us</li>
+            <li>partner with us</li>
+            <li>Careers</li>
+        </ul>
+        <ul class="d-flex flex-column">
+            <li>Blog</li>
+            <li>podcast</li>
+            <li>Groop Bookings</li>
+            <li>Amber plus</li>
+            <li>Media Mention</li>
+            <li>Ambassador</li>
+            <li>Scholarships</li>
+        </ul>
+        <div>
+            <h6><b>Support</b></h6>
+            <ul class="d-flex flex-column">
+                <li>Help Center</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div style="width:250px">
+            <h5><b>Contact us</b></h5>
+            <ul class="d-flex flex-column">
+                <li class="contact"><i style="color:green" class="fa-solid fa-phone-flip logo-size"></i>
+                    +91 9513884849 </li>
+                <li class="contact">  <i style="color:green" class="fa-solid fa-envelope logo-size"></i>
+                   contact@amberstudent.com</li>
+                    <li class="contact"><i style='color:green' class="fa-brands fa-whatsapp logo-size"></i>
+                        Whatsapp</li>
+                <li class="contact"><i class="fa-solid fa-location-dot"></i> 40E Main St # 1215 Newwark 19711-4639 Delaware</li>        
+            </ul>
+        </div>
+    </div>
+    <div class="follow-us-section">
+        <div class="follow-us order-0 order-sm-1 mb-5">
+            <h6>Follow us on</h6>
+            <div class="social-media">
+                <i class="fa-brands fa-linkedin logo-size" style="color:blue; padding-right:8px"></i>
+                <i class="fa-brands fa-facebook logo-size" style="color:rgb(60, 60, 242);padding-right:8px"></i>
+                <i class="fa-brands fa-instagram logo-size" style="color:rgb(199, 41, 68);padding-right:8px"></i>
+                <i class="fa-brands fa-twitter logo-size" style="color:blue;padding-right:8px"></i>
+                <i class="fa-brands fa-whatsapp logo-size" style="color:rgb(79, 215, 29);padding-right:8px"></i>
+            </div>
+        </div>
+        <div style="display:flex;
+        align-items:center;
+        padding-left:5px;
+        margin-bottom:10px;" class="order-1 order-sm-0">
+            <div>
+                <h6>Get the app.</h6>
+                <img src="https://res.cloudinary.com/dkredoejm/image/upload/v1712151865/playstore_kruyll.png" width="35"/>
+                <img src="https://res.cloudinary.com/dkredoejm/image/upload/v1712151877/apple_al1j85.png" width="35"/>
+            </div>
+            <div class="vertical-line"></div>
+            <div>
+                <h6>Payment Methods</h6>
+                <img src="https://res.cloudinary.com/dkredoejm/image/upload/v1712152004/visa_lhw9e5.png" width="50"/>
+                <img src="https://res.cloudinary.com/dkredoejm/image/upload/v1712152014/mantracard_znppoh.png" width="50"/>
+                <img src="https://res.cloudinary.com/dkredoejm/image/upload/v1712152169/ameriaca_yho2oj.png" width="50"/>
+            </div>
+        </div>
+    </div>
+   </div>
+    </div>
+</body>
+<script>
+    // Function to create a carousel item
+    function carouselComponent(items, index) {
+    let container = document.createElement("div");
+    container.classList.add("w-100","carousel", "slide");
+    container.setAttribute("data-ride", "carousel");
+    let id = "#"+index;
+    console.log(id);
+    container.setAttribute("id", index);
+    
+    var carouselinner = document.createElement("div");
+    carouselinner.classList.add("carousel-inner");
+
+    items.forEach(function (image,index) {
+        let carouselItem = document.createElement("div");
+        carouselItem.classList.add("carousel-item","rounded");
+        if(index == 0){
+            carouselItem.classList.add("active");
+        };
+        let item = document.createElement("img");
+        item.setAttribute("src", image);
+        item.classList.add("d-block", "w-100","carousel-image");
+        carouselItem.appendChild(item);
+        carouselinner.appendChild(carouselItem);
+    });
+    container.appendChild(carouselinner);
+   //prev button
+    let prev = document.createElement("a");
+    prev.classList.add("carousel-control-prev");
+    prev.setAttribute("href",id);
+    prev.setAttribute("role","button");
+    prev.setAttribute("data-slide","prev");
+    let prevSpan = document.createElement("span");
+    prevSpan.classList.add("carousel-control-prev-icon");
+    prevSpan.setAttribute("aria-hidden","true");
+    let srOnly = document.createElement("span");
+    srOnly.classList.add("sr-only");
+    srOnly.textContent="prev";
+    prev.appendChild(prevSpan);
+    prev.appendChild(srOnly);
+    container.appendChild(prev);
+    //next button
+    let next = document.createElement("a");
+    next.classList.add("carousel-control-next");
+    next.setAttribute("href",id);
+    next.setAttribute("role","button");
+    next.setAttribute("data-slide","next");
+    let nextSpan = document.createElement("span");
+    nextSpan.classList.add("carousel-control-next-icon");
+    nextSpan.setAttribute("aria-hidden","true");
+    let srOnlynext = document.createElement("span");
+    srOnlynext.classList.add("sr-only");
+    srOnlynext.textContent="next";
+    next.appendChild(nextSpan);
+    next.appendChild(srOnlynext);
+    container.appendChild(next);
+    return container;
+}
+
+   
+    const dataContainer=[
+        {
+            id:"carousel0",
+            images : ['https://res.cloudinary.com/dkredoejm/image/upload/v1704873116/london-slide11_vvvrzb.png',
+            'https://res.cloudinary.com/dkredoejm/image/upload/v1704878713/6-12_iovbbd.png',
+            'https://res.cloudinary.com/dkredoejm/image/upload/v1704878705/6-11_h22kjz.png',],
+            address : "iQ East Court, London",
+            city:"London, England, GB",
+            availableRooms : "3 Rooms",
+            startRate : 400
+        },
+        {
+            id:"carousel1",
+            images : ['https://res.cloudinary.com/dkredoejm/image/upload/v1704879651/6-21_bobqg4.png',
+            'https://res.cloudinary.com/dkredoejm/image/upload/v1704878732/6-14_rrj0fh.png',
+            'https://res.cloudinary.com/dkredoejm/image/upload/v1704878725/6-13_o2cuh7.png',],
+            address : "iQ East Court, London",
+            city:"London, England, GB",
+            availableRooms : "3 Rooms",
+            startRate : 400
+        },
+        {
+            id:"carousel2",
+            images : ['https://res.cloudinary.com/dkredoejm/image/upload/v1704879655/6-22_jfei9o.png',
+            'https://res.cloudinary.com/dkredoejm/image/upload/v1704879662/6-23_usolj6.png',
+            'https://res.cloudinary.com/dkredoejm/image/upload/v1704880317/6-33_yqliwr.png',],
+            address : "iQ East Court, LondonLondon, England, GB",
+            city:"London, England, GB",
+            availableRooms : "3 Rooms",
+            startRate : 400
+        },
+        {
+            id:"carousel3",
+            images : ['https://res.cloudinary.com/dkredoejm/image/upload/v1704880304/6-32_wi8ugm.png    ',
+            'https://res.cloudinary.com/dkredoejm/image/upload/v1704880297/6-31_ucspex.png',
+            'https://res.cloudinary.com/dkredoejm/image/upload/v1704880304/6-32_wi8ugm.png',],
+            address : "iQ East Court, London",
+            city:"London, England, GB",
+            availableRooms : "3 Rooms",
+            startRate : 400
+        },
+        {
+            id:"carousel4",
+            images : ['https://via.placeholder.com/600x300',
+            'https://via.placeholder.com/600x300/0000FF/808080',
+            'https://via.placeholder.com/600x300/FF0000/FFFFFF',],
+            address : "iQ East Court, London",
+            city:"London, England, GB",
+            availableRooms : "3 Rooms",
+            startRate : 400
+        },
+    ]
+    
+    function blog(item) {
+   
+    
+    let blogContainer = document.createElement("div");
+    blogContainer.classList.add("blogContainer");
+    let carousalscontainer = document.createElement("div");
+    blogContainer.appendChild(carouselComponent(item.images, item.id)); // Change 'item.image' to 'item.images'
+   
+    let blogContent = document.createElement("div");
+    blogContent.classList.add("p-3","blog-content");
+    let blogAddress = document.createElement("h3");
+    blogAddress.textContent = item.address;
+    blogAddress.classList.add("carouselsection-headings");
+    let blogCity = document.createElement('p');
+    blogCity.textContent = item.city;
+    blogCity.classList.add("carouselsection-para")
+    let blogsAvailable = document.createElement("p");
+    blogsAvailable.classList.add("rooms-availability","carouselsection-headings")
+    blogsAvailable.textContent = item.availableRooms;
+    
+    
+    let blogStartingPrice = document.createElement("p"); 
+    let blogContentSpan=document.createElement("span");
+    blogContentSpan.textContent="from ";
+    blogContentSpan.classList.add("carouselsection-para");
+    blogStartingPrice.appendChild(blogContentSpan);
+    let blogContentPrice = document.createElement("b");
+    blogContentPrice.innerHTML = "&#8377;"+item.startRate;
+    blogStartingPrice.appendChild(blogContentPrice); // Added space after 'from'
+    
+    blogContent.appendChild(blogAddress);
+    blogContent.appendChild(blogCity);
+    blogContent.appendChild(blogsAvailable);
+    blogContent.appendChild( blogStartingPrice); // Modified appendChild call to include all elements
+    console.log(blogContent);
+
+    blogContainer.appendChild(blogContent);
+    return blogContainer;
+}
+
+    let blogItems=document.getElementById("blogscontainer");
+    dataContainer.forEach(function(item){
+        blogItems.appendChild(blog(item));
+    })
+
+</script>
+<!--bhargavi code-->
+<!-- Include Bootstrap JS library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!--swiper carousal js-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+<!--end-->
+</html>

@@ -1,0 +1,47 @@
+.blogsSlider{
+    display:flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    position: relative;
+    scrollbar-width: none;
+    flex-grow:0;
+    width:96vw;
+    margin-bottom:10px;
+}
+.blogContainer {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width:280px;
+    margin-right:10px;
+}
+
+.blog-content {
+    width:230px;
+    overflow-x:auto;
+    scrollbar-width: 0px; /* Adjusted max-width */
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    position: relative;
+    scrollbar-width: none;
+    flex-grow:0;
+}
+
+.carousel-image {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: 200px !important; /* Maintain aspect ratio */
+}
+.rooms-availability{
+    background-color:rgb(255, 192, 203,0.5);
+    padding:0px 5px 0px 5px;
+}
+.carouselsection-headings{
+    font-size:23px;
+}
+.carouselsection-para{
+    font-size:15px;
+    color:#818892;
+}
