@@ -45,3 +45,8 @@
     font-size:15px;
     color:#818892;
 }
+.carousel-image:hover{
+    .sidebars{
+        display: flex;
+    }
+}

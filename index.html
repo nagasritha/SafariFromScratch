@@ -770,10 +770,28 @@
     let id = "#"+index;
     console.log(id);
     container.setAttribute("id", index);
+
+    //carousel-indicators
+    let carouselIndicators = document.createElement("div");
+    carouselIndicators.classList.add("carousel-indicators");
+
+    items.forEach(function(image,index){
+      let button = document.createElement("button");
+      button.setAttribute("type","button");
+      button.setAttribute("data-bs-target",id);
+      button.setAttribute("data-bs-slide-to",index);
+      button.setAttribute("area-label",`slide ${index}`);
+      if(index==0){
+        button.setAttribute("class","active");
+        button.setAttribute("aria-current","true");
+      }
+      carouselIndicators.appendChild(button);
+    })
+
+    container.appendChild(carouselIndicators);
     
     var carouselinner = document.createElement("div");
     carouselinner.classList.add("carousel-inner");
-
     items.forEach(function (image,index) {
         let carouselItem = document.createElement("div");
         carouselItem.classList.add("carousel-item","rounded");
@@ -784,12 +802,14 @@
         item.setAttribute("src", image);
         item.classList.add("d-block", "w-100","carousel-image");
         carouselItem.appendChild(item);
+        carouselItem.addEventListener('mouseover', enableIndicators);
+        carouselItem.addEventListener('mouseleave',hideIndicators);
         carouselinner.appendChild(carouselItem);
     });
     container.appendChild(carouselinner);
    //prev button
     let prev = document.createElement("a");
-    prev.classList.add("carousel-control-prev");
+    prev.classList.add("carousel-control-prev", "d-none");
     prev.setAttribute("href",id);
     prev.setAttribute("role","button");
     prev.setAttribute("data-bs-slide","prev");
@@ -804,7 +824,7 @@
     container.appendChild(prev);
     //next button
     let next = document.createElement("a");
-    next.classList.add("carousel-control-next");
+    next.classList.add("carousel-control-next","d-none");
     next.setAttribute("href",id);
     next.setAttribute("role","button");
     next.setAttribute("data-bs-slide","next");
@@ -817,6 +837,18 @@
     next.appendChild(nextSpan);
     next.appendChild(srOnlynext);
     container.appendChild(next);
+    
+
+function enableIndicators() {
+    console.log("Function called");
+    prev.classList.remove("d-none");
+    next.classList.remove("d-none");
+}
+function hideIndicators(){
+     prev.classList.add("d-none");
+     next.classList.add("d-none");
+}
+
     return container;
 }
 
