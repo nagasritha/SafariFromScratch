@@ -767,7 +767,6 @@
     function carouselComponent(items, index) {
     let container = document.createElement("div");
     container.classList.add("w-100","carousel", "slide");
-    container.setAttribute("data-ride", "carousel");
     let id = "#"+index;
     console.log(id);
     container.setAttribute("id", index);
@@ -793,7 +792,7 @@
     prev.classList.add("carousel-control-prev");
     prev.setAttribute("href",id);
     prev.setAttribute("role","button");
-    prev.setAttribute("data-slide","prev");
+    prev.setAttribute("data-bs-slide","prev");
     let prevSpan = document.createElement("span");
     prevSpan.classList.add("carousel-control-prev-icon");
     prevSpan.setAttribute("aria-hidden","true");
@@ -808,7 +807,7 @@
     next.classList.add("carousel-control-next");
     next.setAttribute("href",id);
     next.setAttribute("role","button");
-    next.setAttribute("data-slide","next");
+    next.setAttribute("data-bs-slide","next");
     let nextSpan = document.createElement("span");
     nextSpan.classList.add("carousel-control-next-icon");
     nextSpan.setAttribute("aria-hidden","true");
