@@ -653,3 +653,10 @@ section {
   object-fit: cover;
   border-radius: 10px;
 }
+.ancher-element{
+  color:grey;
+  text-decoration:none;
+}
+.ancher-element:hover{
+text-decoration:none;
+}
